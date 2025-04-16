@@ -1,22 +1,22 @@
 const routePermission = {
   admin: {
     apiGET: [
-      "http://localhost:5173/",
-      "http://localhost:5173/view",
-      "http://localhost:5173/add",
-      "http://localhost:5173/edit",
+      "https://sumondev.vercel.app/",
+      "https://sumondev.vercel.app/view",
+      "https://sumondev.vercel.app/add",
+      "https://sumondev.vercel.app/edit",
     ],
   },
   editor: {
     apiGET: [
-      "http://localhost:5173/",
-      "http://localhost:5173/view",
-      "http://localhost:5173/add",
-      "http://localhost:5173/edit",
+      "https://sumondev.vercel.app/",
+      "https://sumondev.vercel.app/view", 
+      "https://sumondev.vercel.app/add",
+      "https://sumondev.vercel.app/edit",
     ],
   },
   user: {
-    apiGET: ["http://localhost:5173/", "http://localhost:5173/view"],
+    apiGET: ["https://sumondev.vercel.app/", "https://sumondev.vercel.app/view"],
   },
 };
 
