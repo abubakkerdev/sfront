@@ -12,8 +12,7 @@ const customBaseQuery = async ({ url, method, body, token }) => {
     const response = await fetch(`${baseUrl}${url}`, {
       method,
       headers,
-      body: body ? JSON.stringify(body) : undefined,
-      credentials: "include",
+      body: body ? JSON.stringify(body) : undefined
     });
 
     if (!response.ok) {

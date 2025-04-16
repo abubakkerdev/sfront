@@ -7,13 +7,12 @@ const customBaseQuery = async ({ url, method, body, token }) => {
   if (token) {    
     headers.set("Authorization", `Basic ${btoa(`user:${token}`)}`);
   }
-   
+  
   try {
     const response = await fetch(`${baseUrl}${url}`, {
       method,
       headers,
-      body: body ? JSON.stringify(body) : undefined,
-      credentials: "include",
+      body: body ? JSON.stringify(body) : undefined
     });
 
     if (!response.ok) {
