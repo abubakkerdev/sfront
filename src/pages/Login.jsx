@@ -68,7 +68,7 @@ function Login() {
         toast.success(data.success.message, {
           position: "top-right",
           onClose: () => {
-            // navigate("/");
+            navigate("/");
           },
           autoClose: 1500,
           hideProgressBar: false,
